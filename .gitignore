@@ -1,7 +1,7 @@
 # Build and Release Folders
 [Bb]in/
 
-# Other files and folders
+# Intellij Files
 *.idea/
 
 # Executables
