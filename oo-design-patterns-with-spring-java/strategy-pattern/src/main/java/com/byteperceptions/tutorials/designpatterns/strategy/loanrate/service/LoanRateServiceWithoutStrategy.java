@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class LoanRateServiceWithoutStrategy {
     public LoanRate calculateLoanRate(LoanRateCriteria loanRateCriteria) {
-        System.out.println(loanRateCriteria.toString());
 
       if(LoanTerm.FIFTEEN_YEAR.equals(loanRateCriteria.getLoanTerm())){
           if(LoanType.PURCHASE.equals(loanRateCriteria.getLoanType())){

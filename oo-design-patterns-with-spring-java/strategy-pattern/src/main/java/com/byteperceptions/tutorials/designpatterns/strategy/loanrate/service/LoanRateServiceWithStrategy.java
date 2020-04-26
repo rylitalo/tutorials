@@ -14,7 +14,7 @@ public class LoanRateServiceWithStrategy {
     //A much simplified calculation method in which the actual calculation logic has moved to classes that represent
     //the different Loan Rate Scenarios
     public LoanRate calculateLoanRate(LoanRateCriteria loanRateCriteria) {
-        System.out.println(loanRateCriteria.toString());
+
         LoanRateCalculator loanRateCalculator = findLoanRateCalculator(loanRateCriteria);
         if(loanRateCalculator != null){
             return loanRateCalculator.calculateLoanRate();
@@ -24,8 +24,6 @@ public class LoanRateServiceWithStrategy {
 
     private LoanRateCalculator findLoanRateCalculator(LoanRateCriteria loanRateCriteria) {
         String key = generateKey(loanRateCriteria);
-        System.out.println("Searching for Key : " + key);
-        System.out.println(loanRateCalculatorHashMap);
         return loanRateCalculatorHashMap.get(key);
     }
 
