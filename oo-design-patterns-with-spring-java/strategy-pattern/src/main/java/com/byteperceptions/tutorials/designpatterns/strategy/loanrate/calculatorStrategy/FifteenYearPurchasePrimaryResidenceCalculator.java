@@ -1,4 +1,4 @@
-package com.byteperceptions.tutorials.designpatterns.strategy.loanrate.calculator;
+package com.byteperceptions.tutorials.designpatterns.strategy.loanrate.calculatorStrategy;
 
 import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.model.LoanRate;
 import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.model.LoanTerm;
@@ -7,19 +7,19 @@ import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.model.Prop
 import org.springframework.stereotype.Component;
 
 @Component
-public class FifteenYearRefinanceCommercialCalculator implements LoanRateCalculator{
+public class FifteenYearPurchasePrimaryResidenceCalculator implements LoanRateCalculator{
     public LoanRate calculateLoanRate(){
         //Do some logic that requires hundreds of lines of code
-        return new LoanRate(14.75);
+        return new LoanRate(13.25);
     };
     public LoanTerm getLoanTerm(){
         return LoanTerm.FIFTEEN_YEAR;
     };
     public LoanType getLoanType(){
-        return LoanType.REFINANCE;
+        return LoanType.PURCHASE;
     };
     public PropertyType getPropertyType(){
-        return PropertyType.COMMERCIAL;
+        return PropertyType.PRIMARY_RESIDENCE;
     };
 
 }

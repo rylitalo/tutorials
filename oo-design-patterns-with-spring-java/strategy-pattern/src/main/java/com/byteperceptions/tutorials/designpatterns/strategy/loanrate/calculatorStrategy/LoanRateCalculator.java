@@ -1,4 +1,4 @@
-package com.byteperceptions.tutorials.designpatterns.strategy.loanrate.calculator;
+package com.byteperceptions.tutorials.designpatterns.strategy.loanrate.calculatorStrategy;
 
 import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.model.LoanRate;
 import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.model.LoanTerm;

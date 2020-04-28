@@ -1,6 +1,6 @@
 package com.byteperceptions.tutorials.designpatterns.strategy.loanrate.service;
 
-import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.calculator.*;
+import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.calculatorStrategy.*;
 import com.byteperceptions.tutorials.designpatterns.strategy.loanrate.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
