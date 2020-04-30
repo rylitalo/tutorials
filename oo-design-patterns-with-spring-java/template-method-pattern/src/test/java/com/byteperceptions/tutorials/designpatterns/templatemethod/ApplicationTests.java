@@ -1,10 +1,10 @@
-package com.byteperceptions.tutorials.designpatterns.strategy;
+package com.byteperceptions.tutorials.designpatterns.templatemethod;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class StrategyApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
